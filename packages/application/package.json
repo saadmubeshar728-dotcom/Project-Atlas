@@ -1,0 +1,22 @@
+{
+  "name": "@atlas/application",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Application services (ImportService, LeadService, etc.) that orchestrate @atlas/domain and @atlas/infrastructure. UI code should only ever call into this package, per Architecture Specification section 8 (Internal Communication).",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@atlas/domain": "workspace:*",
+    "@atlas/infrastructure": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "better-sqlite3": "^11.3.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}

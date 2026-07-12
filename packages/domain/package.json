@@ -1,0 +1,16 @@
+{
+  "name": "@atlas/domain",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Business rules: validation, duplicate detection, scoring, priority, category matching. No UI or database dependencies, per Architecture Specification section 9 (Dependency Rules).",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}

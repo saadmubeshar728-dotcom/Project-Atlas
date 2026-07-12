@@ -1,0 +1,21 @@
+{
+  "name": "@atlas/ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared React components used by apps/desktop. Presentation only - no direct calls into @atlas/infrastructure or SQLite (Architecture Specification section 9).",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@atlas/domain": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "typescript": "^5.5.4"
+  }
+}
